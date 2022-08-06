@@ -36,7 +36,7 @@
 
 - name: Preparing the prod-node
   hosts: '{{ instanse }}'
-  become: yes
+  become: true
   vars:
     instanse: prod
     package: 'tomcat9'
