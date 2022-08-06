@@ -23,7 +23,7 @@
       dest: '{{ workdir }}'
 
   - name: build webapp
-    shell: mvn package
+    shell: mvn clean package
     args:
       chdir: '{{ workdir }}'
 
