@@ -5,7 +5,6 @@
     instanse: build
     repository: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
     package:
-      - 'python3-pip'
       - 'git'
       - 'docker.io'
     workdir: '/opt/app'
@@ -17,10 +16,6 @@
       name: '{{ package }}'
       state: present
       cache_valid_time: 10000
-
-  - name: Make sure the docker-py is present
-    pip:
-      name: docker-py
 
   - name: Fetch application on git
     git:
