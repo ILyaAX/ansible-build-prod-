@@ -28,7 +28,7 @@
       dest: '{{ workdir }}'
 
   - name: Creating a web application in a maven container
-    community.docker.docker_container:
+    docker_container:
       name: maven_build
       image: maven:3.3-jdk-8
       volumes:
