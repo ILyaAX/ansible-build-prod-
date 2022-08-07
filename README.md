@@ -8,4 +8,12 @@ git clone https://github.com/ILyaAX/ansible-build-prod-.git && \
 cd ansible-build-prod- && \
 ansible-playbook build-prod.yml
 ```
+
+Also added building a web application in a docker container on a build-node:
+
+```
+ansible-playbook docker-build-prod.yml
+```
+
+
 http://YOUR-IP:8080/hello-1.0/
